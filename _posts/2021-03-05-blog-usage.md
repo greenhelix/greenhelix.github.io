@@ -97,3 +97,7 @@ tags: blog usages
    > - &bcc=숨은참조
    > - &su=제목
    > - &body=내용
+
+7. 테마 변경!?
+
+- [첫번째 참고 사이트](https://www.wowthemes.net/jekyll-themes-templates/)
