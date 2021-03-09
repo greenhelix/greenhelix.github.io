@@ -18,14 +18,14 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 locale: "ko-KR"
 title: "GreenHelix"
 title_separator: "-"
-subtitle: "안드로이드 개발"
+subtitle: "애플리케이션 개발"
 name: "Kevin Kim"
 description: "Android Dev.Economy.Management"
 url: "https://greenhelix.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo: "/assets/image/gitlogo.png"
+logo: "/assets/images/gitlogo.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
