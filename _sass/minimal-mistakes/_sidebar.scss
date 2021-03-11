@@ -70,7 +70,18 @@
     }
   }
 }
-
+.sidebar__top {
+  @include breakpoint($gotop_large) {
+    position: fixed;
+    bottom: 50%;
+    right: 20%;
+    z-index: 10;
+  }
+  position: fixed;
+  bottom: 50%;
+  right: 5%;
+  z-index: 10;
+}
 .sidebar__right {
   margin-bottom: 1em;
 
@@ -209,7 +220,7 @@
 
     &:before {
       @supports (pointer-events: none) {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
@@ -343,4 +354,3 @@
     margin-right: initial;
   }
 }
-
