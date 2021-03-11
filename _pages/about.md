@@ -1,10 +1,10 @@
 ---
 permalink: /about/
 title: "About"
-excerpt: "about.md"
-last_modified_at: 2021-03-11
-toc: true
-tags: [About]
+layout: posts
+date: 2021-03-11
+categories: android architecture
+tags: android, architecture
 ---
 
 # 👾Android Developer

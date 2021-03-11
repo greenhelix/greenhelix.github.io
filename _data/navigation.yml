@@ -2,7 +2,7 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Economy"
-    url: /economy/
   - title: "Dev"
     url: /develope/
+  - title: "Economy"
+    url: /economy/
