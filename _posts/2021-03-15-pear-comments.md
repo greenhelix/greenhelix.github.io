@@ -4,22 +4,20 @@ title: "🍐Pear Comments Zip"
 date: 2021-03-15 00:00:00 +0900
 categories: android project
 tags: android, java
-permalink: /develope/
-published: false
+permalink: /develope/pear
+published: true
 ---
 
-## 목차 
+## 목차
 
 1. [메인](#MainActivity.class)
-    > []()
-    > []()
+   > []() > []()
 2. [로그인](#LoginActivity.class)
-    > []()
-    > []()
+   > []() > []()
 
 ---
 
-#### MainActivity.class 
+#### MainActivity.class
 
 ```java
 ActivityCompat.finishAffinity(MainActivity.this); // 해당 액티비티 종료
@@ -45,8 +43,8 @@ final GoogleSignInOptions googleOpt = new GoogleSignInOptions.Builder(GoogleSign
 client = GoogleSignIn.getClient(this, googleOpt);
 ```
 
-구글 api를 쓰다보면, 이 <span style="color:red">default_web_client_id</span> 부분이 빨갛게 된다. 
-당황하지말고, 실행시키고 한번 수신을 하게 되면 자연적으로 입력이 된다. 
+구글 api를 쓰다보면, 이 <span style="color:red">default_web_client_id</span> 부분이 빨갛게 된다.
+당황하지말고, 실행시키고 한번 수신을 하게 되면 자연적으로 입력이 된다.
 
 ```java
 public void signOut(View v){
@@ -61,4 +59,3 @@ public void signOut(View v){
             });
 }
 ```
-
