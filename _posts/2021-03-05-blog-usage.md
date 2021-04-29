@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "🌋🧗🏻‍♂️github.io 편하게 사용하기 위한 여정🌋🧗🏻‍♂️"
+title: "🌋🧗🏻‍♂️github.io 편하게 사용하기 위한 여정"
 date: 2021-03-05 18:19:07 +0900
 categories: blog control
 tags: blog usages
