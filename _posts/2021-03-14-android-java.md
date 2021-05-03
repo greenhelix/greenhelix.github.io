@@ -14,13 +14,13 @@ permalink: /develope/snippet
 
 ## 목차
 
-1. [자주 사용 객체](#Android-SKILL)
+1. [자주 사용 객체](#android-skill)
 
-   - [인텐트](<#Intent-(데이터-이동)>)
-   - [팝업창](<#AlertDialog-(팝업창)>)
+   - [인텐트](<#intent-(데이터-이동)>)
+   - [팝업창](<#alertdialog-(팝업창)>)
 
-2. [자주 쓰는 자바 형 변화 / 코틀린도 포함하자](#CONVERT)
-   - [List, Array](#List,-Array)
+2. [자주 쓰는 자바 형 변화 / 코틀린도 포함하자](#convert)
+   - [List, Array](#list,-array)
 
 ---
 
