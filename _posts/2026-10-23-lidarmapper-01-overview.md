@@ -1,6 +1,6 @@
 ---
 title: "[LiDAR Mapper #1] 가방에 메고 걷는 2D 지도 만들기 — 프로젝트 개요"
-date: 2026-10-23 10:00:00 +0900
+date: 2026-08-31 10:00:00 +0900
 categories: [Project, Robotics]
 tags: [ros2, slam, lidar, flutter, orangepi, imu]
 series: lidarmapper
@@ -53,13 +53,19 @@ _2026-08-31 개발환경 구축부터 2026-10-01 첫 필드 테스트까지의 �
 
 {% include lidar-progress.html %}
 
-## 시리즈 목차
+## 시리즈 목차 (시간 순)
+{% include series-timeline.html series="lidarmapper" %}
+
+<details><summary>목록으로 보기</summary>
+
 1. 프로젝트 개요 (이 글)
 2. 보드 선택과 폼팩터 전환 — Raspberry Pi 5에서 Orange Pi 4 Pro로
 3. IMU가 I2C에서 안 잡힐 때 — 범인은 납땜 안 된 두 핀
 4. EKF 센서 퓨전의 함정 — 위치와 방향을 분리하면 지도가 깨진다
 5. 지도가 이상할 땐? 세션 제어와 자동 저장 설계
 6. 정확도 올리는 중 — 드리프트 진단 도구와 필드 테스트 프로토콜
+
+</details>
 
 ## 🇺🇸 Summary
 

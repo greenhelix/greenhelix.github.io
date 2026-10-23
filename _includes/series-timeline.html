@@ -1,0 +1,12 @@
+{%- comment -%} 사용법: {% include series-timeline.html series="lidarmapper" %} — 날짜 오름차순 세로 타임라인 {%- endcomment -%}
+{%- assign sp = site.posts | where: "series", include.series | sort: "date" -%}
+<div style="position:relative;margin:1.2rem 0 1.2rem 8px;padding-left:22px;border-left:3px solid rgba(122,92,240,.45);">
+{%- for p in sp %}
+  <div style="position:relative;margin:0 0 18px 0;">
+    <span style="position:absolute;left:-31px;top:4px;width:15px;height:15px;border-radius:50%;background:#7a5cf0;border:3px solid var(--main-bg,#fff);box-sizing:content-box;"></span>
+    <div style="font-size:.8em;opacity:.7;">{{ p.date | date: "%Y-%m-%d" }} · #{{ p.series_order }}</div>
+    <a href="{{ p.url | relative_url }}" style="font-weight:600;">{{ p.title | remove: "[LiDAR Mapper " | split: "] " | last }}</a>
+    <div style="font-size:.85em;opacity:.8;">{{ p.description }}</div>
+  </div>
+{%- endfor %}
+</div>
