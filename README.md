@@ -1,6 +1,7 @@
-# github.io
-github io domain
+# kani's dev log
 
+Jekyll + [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) blog → https://greenhelix.github.io
 
-#### google domain check 
-- googlee775736b1ef5aab3.html uploaded.
+- New post: copy `templates/*.md` into `_posts/` (see `CLAUDE.md` for rules)
+- Local preview: `bundle install && bundle exec jekyll serve`
+- Deploy: push to `main` (GitHub Actions)
