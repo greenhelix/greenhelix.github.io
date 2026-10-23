@@ -1,0 +1,10 @@
+{%- comment -%} 사용법: {% include series-nav.html series="lidarmapper" %} {%- endcomment -%}
+{%- assign sp = site.posts | where: "series", include.series | sort: "series_order" -%}
+<div style="border-left:4px solid #7a5cf0;background:rgba(122,92,240,.08);padding:10px 14px;margin:1rem 0;border-radius:0 8px 8px 0;">
+  <b>📚 시리즈 · Portable LiDAR Mapper</b>
+  <ol style="margin:6px 0 0 1.2em;padding:0;">
+  {%- for p in sp %}
+    <li>{% if p.url == page.url %}<b>{{ p.title }}</b> ← 현재 글{% else %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}</li>
+  {%- endfor %}
+  </ol>
+</div>
