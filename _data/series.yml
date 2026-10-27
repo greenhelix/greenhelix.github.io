@@ -3,7 +3,7 @@
 lidarmapper:
   title: "Portable LiDAR Mapper"
   source: "repo greenhelix/PortableLidarMapper (devlog/) + 세션 LidarMapper"
-  synced_through: 2026-10-23
+  synced_through: 2026-10-27
 pear:
   title: "Pear — 배 농장 배송관리 앱"
   source: "세션 pear (로컬 PC, 저장소 없음 — 대화/CLAUDE.md 기록 기반)"
