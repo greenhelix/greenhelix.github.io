@@ -1,0 +1,10 @@
+# 프로젝트 시리즈 메타데이터 — 글의 front matter에 series: <키>, series_order: N 를 넣으면 자동 연결됩니다.
+# source: 글감을 가져오는 곳(개발로그). synced_through: 여기까지 반영함 → 다음 업데이트는 이 이후부터 읽는다.
+lidarmapper:
+  title: "Portable LiDAR Mapper"
+  source: "repo greenhelix/PortableLidarMapper (devlog/) + 세션 LidarMapper"
+  synced_through: 2026-10-23
+pear:
+  title: "Pear — 배 농장 배송관리 앱"
+  source: "세션 pear (로컬 PC, 저장소 없음 — 대화/CLAUDE.md 기록 기반)"
+  synced_through: 2026-10-24

@@ -10,7 +10,7 @@ description: 실시간 스캔은 선명한데 누적 지도가 번지는 문제�
 
 {% include series-nav.html series="lidarmapper" %}
 
-{% include lidar-progress.html %}
+{% include project-progress.html project="lidarmapper" %}
 
 ## 🇰🇷 문제
 실시간 스캔은 선명한데 **누적 지도는 방사형으로 번지는** 현상이 계속됐습니다. 원인 후보는 크게 둘입니다.

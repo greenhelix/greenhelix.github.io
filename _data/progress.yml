@@ -1,0 +1,21 @@
+# 프로젝트별 진행률(%) — 이 파일만 고치면 모든 글/포트폴리오의 프로그레스 바가 갱신됩니다.
+# 값은 작성자의 주관적 추정치입니다. 사용법: {% include project-progress.html project="lidarmapper" %}
+lidarmapper:
+  updated: 2026-10-23
+  items:
+    - { name: "하드웨어 (센서·마운트·전원)", value: 90 }
+    - { name: "센서 연동 (LiDAR · IMU · EKF)", value: 85 }
+    - { name: "모바일 앱 (Flutter)", value: 80 }
+    - { name: "세션 관리 · 저장 · DB", value: 70 }
+    - { name: "지도 정확도 튜닝 (진행 중)", value: 55 }
+    - { name: "문서 · 사용성", value: 50 }
+
+pear:
+  updated: 2026-10-27
+  items:
+    - { name: "요구사항 · 설계", value: 40 }
+    - { name: "서버 · DB · 터널 인프라", value: 10 }
+    - { name: "백엔드 API (FastAPI)", value: 0 }
+    - { name: "모바일 앱 (Flutter)", value: 0 }
+    - { name: "OCR 주문 입력", value: 0 }
+    - { name: "통계 · 대시보드", value: 0 }

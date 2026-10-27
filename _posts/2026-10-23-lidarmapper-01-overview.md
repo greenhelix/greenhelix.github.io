@@ -51,7 +51,7 @@ flowchart LR
 ![개발 히스토리 타임라인](/assets/img/posts/lidarmapper/01-dev-timeline.png){: w="900" }
 _2026-08-31 개발환경 구축부터 2026-10-01 첫 필드 테스트까지의 흐름_
 
-{% include lidar-progress.html %}
+{% include project-progress.html project="lidarmapper" %}
 
 ## 시리즈 목차 (시간 순)
 {% include series-timeline.html series="lidarmapper" %}

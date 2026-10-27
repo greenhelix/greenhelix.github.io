@@ -1,11 +1,12 @@
-{%- comment -%} 사용법: {% include lidar-progress.html %}  (데이터: _data/lidarmapper_progress.yml) {%- endcomment -%}
+{%- comment -%} 사용법: {% include project-progress.html project="lidarmapper" %}  (데이터: _data/progress.yml) {%- endcomment -%}
+{%- assign pd = site.data.progress[include.project] -%}
 {%- assign total = 0 -%}
-{%- for it in site.data.lidarmapper_progress.items -%}{%- assign total = total | plus: it.value -%}{%- endfor -%}
-{%- assign avg = total | divided_by: site.data.lidarmapper_progress.items.size -%}
+{%- for it in pd.items -%}{%- assign total = total | plus: it.value -%}{%- endfor -%}
+{%- assign avg = total | divided_by: pd.items.size -%}
 <div style="border:1px solid rgba(128,128,128,.35);border-radius:10px;padding:14px 16px;margin:1.2rem 0;">
   <div style="font-weight:700;margin-bottom:10px;">📊 프로젝트 진행률 · 전체 약 {{ avg }}%
-    <span style="font-weight:400;font-size:.8em;opacity:.7;"> (업데이트 {{ site.data.lidarmapper_progress.updated }} · 작성자 추정)</span></div>
-  {%- for it in site.data.lidarmapper_progress.items %}
+    <span style="font-weight:400;font-size:.8em;opacity:.7;"> (업데이트 {{ pd.updated }} · 작성자 추정)</span></div>
+  {%- for it in pd.items %}
   <div style="margin:8px 0;">
     <div style="display:flex;justify-content:space-between;font-size:.88em;"><span>{{ it.name }}</span><span>{{ it.value }}%</span></div>
     <div style="background:rgba(128,128,128,.25);border-radius:6px;height:10px;overflow:hidden;" role="progressbar" aria-valuenow="{{ it.value }}" aria-valuemin="0" aria-valuemax="100" aria-label="{{ it.name }}">
