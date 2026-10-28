@@ -8,17 +8,18 @@
     html.sidebar-collapsed #main-wrapper { margin-left: 0; }
     #sidebar-collapse-btn {
       display: flex; align-items: center; justify-content: center;
-      position: fixed; top: .6rem; left: 268px; z-index: 1031;
+      position: fixed; top: .6rem; left: 217px; z-index: 1031;
       width: 2rem; height: 2rem; padding: 0; border-radius: 50%; cursor: pointer;
       color: var(--text-color); background: var(--card-bg, var(--main-bg));
       border: 1px solid var(--btn-border-color, rgba(128,128,128,.4));
       box-shadow: 0 1px 4px rgba(0,0,0,.15); transition: left .25s ease;
     }
     html.sidebar-collapsed #sidebar-collapse-btn { left: .6rem; }
+    html.sidebar-collapsed #topbar { padding-left: 2.8rem !important; }
   }
   @media (min-width: 1650px) {
     html.sidebar-collapsed #sidebar { transform: translateX(-300px); }
-    #sidebar-collapse-btn { left: 308px; }
+    #sidebar-collapse-btn { left: 257px; }
     html.sidebar-collapsed #sidebar-collapse-btn { left: .6rem; }
   }
 </style>
