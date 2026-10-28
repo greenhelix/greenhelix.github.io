@@ -1,7 +1,7 @@
-{%- comment -%} 데스크톱 중간 폭(850~1199px)에서 왼쪽 사이드바를 접고 펴는 버튼. 850px 미만은 테마 기본 햄버거를 쓴다. {%- endcomment -%}
+{%- comment -%} 데스크톱(850px 이상) 전 구간에서 왼쪽 사이드바를 접고 펴는 둥근 버튼. 850px 미만은 테마 기본 햄버거를 쓴다. {%- endcomment -%}
 <style>
   #sidebar-collapse-btn { display: none; }
-  @media (min-width: 850px) and (max-width: 1199.98px) {
+  @media (min-width: 850px) {
     #sidebar { transition: transform .25s ease; }
     #main-wrapper { transition: margin-left .25s ease; }
     html.sidebar-collapsed #sidebar { transform: translateX(-260px); }
@@ -14,6 +14,11 @@
       border: 1px solid var(--btn-border-color, rgba(128,128,128,.4));
       box-shadow: 0 1px 4px rgba(0,0,0,.15); transition: left .25s ease;
     }
+    html.sidebar-collapsed #sidebar-collapse-btn { left: .6rem; }
+  }
+  @media (min-width: 1650px) {
+    html.sidebar-collapsed #sidebar { transform: translateX(-300px); }
+    #sidebar-collapse-btn { left: 308px; }
     html.sidebar-collapsed #sidebar-collapse-btn { left: .6rem; }
   }
 </style>
