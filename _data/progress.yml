@@ -11,11 +11,11 @@ lidarmapper:
     - { name: "문서 · 사용성", value: 90 }
 
 pear:
-  updated: 2026-10-27
+  updated: 2026-10-28
   items:
     - { name: "요구사항 · 설계", value: 40 }
-    - { name: "서버 · DB · 터널 인프라", value: 10 }
-    - { name: "백엔드 API (FastAPI)", value: 0 }
-    - { name: "모바일 앱 (Flutter)", value: 0 }
+    - { name: "서버 · DB · 터널 인프라", value: 20 }
+    - { name: "백엔드 API (FastAPI)", value: 5 }
+    - { name: "모바일 앱 (Flutter)", value: 5 }
     - { name: "OCR 주문 입력", value: 0 }
     - { name: "통계 · 대시보드", value: 0 }
