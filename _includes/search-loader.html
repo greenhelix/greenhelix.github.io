@@ -1,0 +1,102 @@
+<!--
+  검색 로더 (테마 기본 Simple-Jekyll-Search 대체)
+  - 영문/숫자로 시작·끝나는 검색어는 "단어 단위"로만 일치시킨다. (예: pear → appear, pearl 제외)
+  - 한글 검색어는 조사가 붙으므로 부분 일치를 허용한다.
+  - 공백으로 나눈 여러 단어는 모두 포함해야 한다(AND).
+-->
+
+{% capture result_elem %}
+  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">
+    <header>
+      <h2><a href="{url}">{title}</a></h2>
+      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
+        {categories}
+        {tags}
+      </div>
+    </header>
+    <p>{content}</p>
+  </article>
+{% endcapture %}
+
+{% capture not_found %}<p class="mt-5">{{ site.data.locales[include.lang].search.no_results }}</p>{% endcapture %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('search-input');
+    const box = document.getElementById('search-results');
+    if (!input || !box) return;
+
+    const TEMPLATE = {{ result_elem | strip_newlines | jsonify }};
+    const NOT_FOUND = {{ not_found | jsonify }};
+    const LIMIT = 20;
+    const ALNUM = /[a-z0-9]/i;
+    let posts = null;
+    let loading = null;
+
+    const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+    // 단어 경계를 지키는 위치 찾기. 없으면 -1.
+    function find(text, term) {
+      const t = text.toLowerCase();
+      const needStart = ALNUM.test(term[0]);
+      const needEnd = ALNUM.test(term[term.length - 1]);
+      let i = t.indexOf(term);
+      while (i !== -1) {
+        const before = i > 0 ? t[i - 1] : '';
+        const after = t[i + term.length] || '';
+        if (!(needStart && ALNUM.test(before)) && !(needEnd && ALNUM.test(after))) return i;
+        i = t.indexOf(term, i + 1);
+      }
+      return -1;
+    }
+
+    function snippet(text, pos) {
+      if (pos < 0) pos = 0;
+      const start = Math.max(0, pos - 40);
+      const s = text.slice(start, start + 200);
+      return (start > 0 ? '…' : '') + s + (start + 200 < text.length ? '…' : '');
+    }
+
+    function render(query) {
+      const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+      if (!terms.length) { box.innerHTML = ''; return; }
+      const out = [];
+      for (const p of posts) {
+        const hay = [p.title, p.categories, p.tags, p.content];
+        let ok = true;
+        let contentPos = -1;
+        for (const term of terms) {
+          const hit = hay.map((h) => find(h || '', term));
+          if (hit.every((x) => x === -1)) { ok = false; break; }
+          if (contentPos < 0 && hit[3] >= 0) contentPos = hit[3];
+        }
+        if (!ok) continue;
+        const cats = p.categories ? '<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>' + esc(p.categories) + '</div>' : '';
+        const tags = p.tags ? '<div><i class="fa fa-tag fa-fw"></i>' + esc(p.tags) + '</div>' : '';
+        out.push(TEMPLATE
+          .replace('{url}', () => esc(p.url))
+          .replace('{title}', () => esc(p.title))
+          .replace('{categories}', () => cats)
+          .replace('{tags}', () => tags)
+          .replace('{content}', () => esc(snippet(p.content || '', contentPos))));
+        if (out.length >= LIMIT) break;
+      }
+      box.innerHTML = out.length ? out.join('') : NOT_FOUND;
+    }
+
+    function load() {
+      if (!loading) {
+        loading = fetch({{ '/assets/js/data/search.json' | relative_url | jsonify }})
+          .then((r) => r.json())
+          .then((d) => { posts = d; });
+      }
+      return loading;
+    }
+
+    input.addEventListener('input', () => {
+      const q = input.value.trim();
+      if (!q) { box.innerHTML = ''; return; }
+      load().then(() => render(input.value.trim()));
+    });
+  });
+</script>
