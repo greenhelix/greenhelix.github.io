@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #8] LeetCode 풀이 모음 — 슬라이딩 윈도우, 중심 확장, 비트 연산"
+title: "[풀이 #1] LeetCode 풀이 모음 — 슬라이딩 윈도우, 중심 확장, 비트 연산"
 date: 2021-02-09 10:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [algorithm, leetcode, python, sliding-window]
 series: algorithm
 series_order: 8
+group: platform
+group_order: 1
 description: LeetCode 10문제 중 패턴이 뚜렷한 풀이와 고쳐 써 본 풀이
 ---
 

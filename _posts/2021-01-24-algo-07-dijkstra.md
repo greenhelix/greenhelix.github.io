@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #7] 다익스트라 — 힙으로 최단 경로 구하기"
+title: "[개념 #5] 다익스트라 — 힙으로 최단 경로 구하기"
 date: 2021-01-24 10:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [algorithm, dijkstra, graph, heap, python]
 series: algorithm
 series_order: 7
+group: concept
+group_order: 5
 description: 백준 1753 '최단경로'로 정리한 우선순위 큐 기반 다익스트라
 mermaid: true
 ---

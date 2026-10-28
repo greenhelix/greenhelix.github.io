@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #12] CodeSignal Python Arcade — 파이썬다운 풀이 익히기"
+title: "[풀이 #4] CodeSignal Python Arcade — 파이썬다운 풀이 익히기"
 date: 2021-03-11 12:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [algorithm, codesignal, python, generator, lambda]
 series: algorithm
 series_order: 12
+group: platform
+group_order: 4
 description: urlparse, translate, yield, 정렬 key 등 파이썬 내장 기능으로 짧게 푸는 법
 ---
 

@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #18] C로 구현한 큐·트리·분리 집합 — 구현하며 다시 읽어 본 코드"
+title: "[개념 #9] C로 구현한 큐·트리·분리 집합 — 구현하며 다시 읽어 본 코드"
 date: 2024-05-26 10:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [c, data-structure, queue, tree, disjoint-set]
 series: algorithm
 series_order: 18
+group: concept
+group_order: 9
 description: 책을 따라 C로 구현한 자료구조와, 다시 읽다가 발견한 개선점
 ---
 

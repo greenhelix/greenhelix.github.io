@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #6] 문자열 압축 — 단위를 바꿔 가며 전부 해 보는 완전 탐색"
+title: "[카카오 #1] 문자열 압축 — 단위를 바꿔 가며 전부 해 보는 완전 탐색"
 date: 2020-08-28 10:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [algorithm, brute-force, string, kakao]
 series: algorithm
 series_order: 6
+group: kakao
+group_order: 1
 description: 카카오 기출 '문자열 압축'을 압축 단위별 길이 계산으로 푼 기록
 ---
 

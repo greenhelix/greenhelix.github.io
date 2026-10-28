@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #10] CodeSignal Arcade Intro (Java) — 60문제에서 건진 패턴"
+title: "[풀이 #2] CodeSignal Arcade Intro (Java) — 60문제에서 건진 패턴"
 date: 2021-03-11 10:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [algorithm, codesignal, java, backtracking, string]
 series: algorithm
 series_order: 10
+group: platform
+group_order: 2
 description: CodeSignal 입문 아케이드 Java 풀이 중 배울 점이 있던 문제들
 ---
 

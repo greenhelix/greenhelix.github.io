@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #3] 에라토스테네스의 체와 괄호 변환 — 구현하다 발견한 off-by-one"
+title: "[개념 #2] 에라토스테네스의 체와 괄호 변환 — 구현하다 발견한 off-by-one"
 date: 2020-08-18 10:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [algorithm, prime, recursion, kakao, python]
 series: algorithm
 series_order: 3
+group: concept
+group_order: 2
 description: 소수 구하기 체의 경계 버그와 카카오 기출 괄호 변환의 재귀 분할
 ---
 

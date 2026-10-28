@@ -1,10 +1,27 @@
-{%- comment -%} 사용법: {% include series-nav.html series="lidarmapper" %} {%- endcomment -%}
+{%- comment -%} 사용법: {% include series-nav.html series="lidarmapper" %} — series.yml에 groups가 있으면 종류별 접기 목록 {%- endcomment -%}
 {%- assign sp = site.posts | where: "series", include.series | sort: "series_order" -%}
+{%- assign meta = site.data.series[include.series] -%}
 <div style="border-left:4px solid #7a5cf0;background:rgba(122,92,240,.08);padding:10px 14px;margin:1rem 0;border-radius:0 8px 8px 0;">
-  <b>📚 시리즈 · {{ site.data.series[include.series].title }}</b>
+  <b>📚 시리즈 · {{ meta.title }}</b>
+{%- if meta.groups %}
+  {%- for g in meta.groups %}
+    {%- assign gp = sp | where: "group", g.key | sort: "group_order" %}
+    {%- assign is_open = false %}
+    {%- for p in gp %}{% if p.url == page.url %}{% assign is_open = true %}{% endif %}{% endfor %}
+  <details style="margin-top:6px;"{% if is_open %} open{% endif %}>
+    <summary style="cursor:pointer;"><b>{{ g.title }}</b> <span style="opacity:.7;">({{ gp.size }})</span></summary>
+    <ol style="margin:6px 0 0 1.2em;padding:0;">
+    {%- for p in gp %}
+      <li>{% if p.url == page.url %}<b>{{ p.title }}</b> ← 현재 글{% else %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}</li>
+    {%- endfor %}
+    </ol>
+  </details>
+  {%- endfor %}
+{%- else %}
   <ol style="margin:6px 0 0 1.2em;padding:0;">
   {%- for p in sp %}
     <li>{% if p.url == page.url %}<b>{{ p.title }}</b> ← 현재 글{% else %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% endif %}</li>
   {%- endfor %}
   </ol>
+{%- endif %}
 </div>

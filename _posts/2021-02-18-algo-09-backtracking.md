@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #9] 백트래킹 — 선택, 재귀, 되돌리기 (N-Queen · N과 M · 스도쿠 · 연산자 끼워넣기)"
+title: "[개념 #6] 백트래킹 — 선택, 재귀, 되돌리기 (N-Queen · N과 M · 스도쿠 · 연산자 끼워넣기)"
 date: 2021-02-18 10:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [algorithm, backtracking, recursion, python]
 series: algorithm
 series_order: 9
+group: concept
+group_order: 6
 description: 백트래킹의 공통 틀과 가지치기를 네 문제로 정리
 ---
 

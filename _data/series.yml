@@ -12,3 +12,8 @@ algorithm:
   title: "알고리즘 스터디 (AlgorithmStudy 정리)"
   source: "repo greenhelix/AlgorithmStudy (공개) — 주제별 재정리, 문제 지문은 옮기지 않음"
   synced_through: 2024-05-26
+  groups:
+    - { key: guide,    title: "안내" }
+    - { key: concept,  title: "알고리즘 개념 (정렬·탐색·DP 등)" }
+    - { key: kakao,    title: "카카오 코딩테스트 기출" }
+    - { key: platform, title: "플랫폼별 풀이 (LeetCode · CodeSignal)" }

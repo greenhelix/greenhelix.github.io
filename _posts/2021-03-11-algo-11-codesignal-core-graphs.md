@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #11] CodeSignal Core · Graphs · Interview Practice — 비트 연산과 그래프 문제"
+title: "[풀이 #3] CodeSignal Core · Graphs · Interview Practice — 비트 연산과 그래프 문제"
 date: 2021-03-11 11:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [algorithm, codesignal, python, graph, bit]
 series: algorithm
 series_order: 11
+group: platform
+group_order: 3
 description: 비트 반전, 첫 중복 찾기, 2-hop 도로망 판정 등 CodeSignal Python 풀이
 ---
 

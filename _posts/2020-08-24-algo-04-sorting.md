@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #4] 정렬 — 파이썬 key 정렬부터 카운팅 정렬, 그리고 C로 구현한 삽입·퀵"
+title: "[개념 #3] 정렬 — 파이썬 key 정렬부터 카운팅 정렬, 그리고 C로 구현한 삽입·퀵"
 date: 2020-08-24 10:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [algorithm, sorting, python, c]
 series: algorithm
 series_order: 4
+group: concept
+group_order: 3
 description: 정렬 문제에서 key 함수와 카운팅 정렬을 쓰는 방법, C로 직접 구현한 삽입·퀵 정렬
 ---
 

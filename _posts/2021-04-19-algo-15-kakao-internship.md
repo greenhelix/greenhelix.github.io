@@ -1,10 +1,12 @@
 ---
-title: "[알고리즘 #15] 카카오 인턴십 기출 정리 — 이분 탐색, 투 포인터, 유니온 파인드"
+title: "[카카오 #2] 카카오 인턴십 기출 정리 — 이분 탐색, 투 포인터, 유니온 파인드"
 date: 2021-04-19 10:00:00 +0900
 categories: [TIL, Algorithm]
 tags: [algorithm, kakao, binary-search, two-pointers, union-find, python]
 series: algorithm
 series_order: 15
+group: kakao
+group_order: 2
 description: 징검다리 건너기, 보석 쇼핑, 호텔 방 배정 등 카카오 인턴십 기출에서 반복된 패턴
 ---
 
