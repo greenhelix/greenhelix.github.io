@@ -27,6 +27,15 @@ order: 5
 
 {% include series-timeline.html series="pear" %}
 
+## 🗂️ Data Collector — 인물·뉴스·지도 기록 앱
+
+인물 위키, 뉴스 아카이브, GPS 경로 기록을 한 앱에 쌓는 개인 프로젝트 (Flutter · Riverpod · Drift · Firebase). 웹 배포까지 마쳤고 모바일 실기기 검증이 남아 있습니다.
+*A personal Flutter app for people, news and GPS tracks — web deployed, device testing pending.*
+
+{% include project-progress.html project="datacollector" %}
+
+{% include series-timeline.html series="datacollector" %}
+
 ## 📚 알고리즘 스터디
 
 2020년부터 쌓은 풀이를 주제별(힙·정렬·DFS/BFS·다익스트라·백트래킹·DP·그리디·C 자료구조)로 다시 정리했습니다.

@@ -17,3 +17,7 @@ algorithm:
     - { key: concept,  title: "알고리즘 개념 (정렬·탐색·DP 등)" }
     - { key: kakao,    title: "카카오 코딩테스트 기출" }
     - { key: platform, title: "플랫폼별 풀이 (LeetCode · CodeSignal)" }
+datacollector:
+  title: "Data Collector — 인물·뉴스·지도 기록 앱"
+  source: "개인 프로젝트 개발 로그 (Flutter 앱, 2026-01~03)"
+  synced_through: 2026-03-03

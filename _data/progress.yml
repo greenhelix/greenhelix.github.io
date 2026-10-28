@@ -19,3 +19,13 @@ pear:
     - { name: "모바일 앱 (Flutter)", value: 5 }
     - { name: "OCR 주문 입력", value: 0 }
     - { name: "통계 · 대시보드", value: 0 }
+
+datacollector:
+  updated: 2026-03-03
+  items:
+    - { name: "인물 위키", value: 95 }
+    - { name: "뉴스 아카이브", value: 95 }
+    - { name: "지도 · GPS 트래커", value: 85 }
+    - { name: "Firebase 연동 · 웹 배포", value: 90 }
+    - { name: "모바일 실기기 검증", value: 30 }
+    - { name: "테스트 · 문서", value: 20 }
