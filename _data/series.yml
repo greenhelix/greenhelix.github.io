@@ -8,3 +8,7 @@ pear:
   title: "Pear — 배 농장 배송관리 앱"
   source: "세션 pear (로컬 PC, 저장소 없음 — 대화/CLAUDE.md 기록 기반)"
   synced_through: 2026-10-27
+algorithm:
+  title: "알고리즘 스터디 (AlgorithmStudy 정리)"
+  source: "repo greenhelix/AlgorithmStudy (공개) — 주제별 재정리, 문제 지문은 옮기지 않음"
+  synced_through: 2024-05-26

@@ -26,3 +26,10 @@ order: 5
 {% include project-progress.html project="pear" %}
 
 {% include series-timeline.html series="pear" %}
+
+## 📚 알고리즘 스터디
+
+2020년부터 쌓은 풀이를 주제별(힙·정렬·DFS/BFS·다익스트라·백트래킹·DP·그리디·C 자료구조)로 다시 정리했습니다.
+*Topic-by-topic write-ups of my algorithm practice since 2020.*
+
+{% include series-timeline.html series="algorithm" %}
