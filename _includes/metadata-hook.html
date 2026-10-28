@@ -22,6 +22,18 @@
     #sidebar-collapse-btn { left: 257px; }
     html.sidebar-collapsed #sidebar-collapse-btn { left: .6rem; }
   }
+  /* PWA 업데이트 안내 팝업: 화면 아래 가운데의 작은 알약 모양으로 */
+  @keyframes kani-toast-in { from { opacity: 0; transform: translate(-50%, 14px); } to { opacity: 1; transform: translate(-50%, 0); } }
+  #notification.toast.show {
+    bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); left: 50%; transform: translateX(-50%);
+    z-index: 1090; padding: .3rem .4rem .3rem .2rem; border-radius: 999px !important;
+    color: var(--text-color); background: var(--card-bg, var(--main-bg));
+    border: 1px solid var(--btn-border-color, rgba(128,128,128,.4));
+    box-shadow: 0 6px 24px rgba(0,0,0,.22);
+    -webkit-animation: kani-toast-in .35s ease-out; animation: kani-toast-in .35s ease-out;
+  }
+  #notification.toast .toast-body { font-size: .95rem; font-weight: 600; padding-top: .35rem; padding-bottom: .35rem; }
+  #notification.toast button[aria-label='Update'] { font-size: .85rem; padding: .25rem .8rem; border-radius: 999px !important; }
 </style>
 <script>
   (function () {
@@ -38,6 +50,11 @@
         try { localStorage.setItem(KEY, on ? '1' : '0'); } catch (e) {}
       });
       document.body.appendChild(btn);
+      /* 업데이트 팝업 문구를 한국어로 (버튼 동작에 쓰이는 aria-label은 건드리지 않는다) */
+      var body = document.querySelector('#notification .toast-body');
+      var upd = document.querySelector('#notification button[aria-label="Update"]');
+      if (body) body.textContent = '새 내용이 있어요';
+      if (upd) upd.textContent = '새로고침';
     });
   })();
 </script>
