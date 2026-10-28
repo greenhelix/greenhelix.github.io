@@ -35,7 +35,7 @@
 
     const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-    // 단어 경계를 지키는 위치 찾기. 없으면 -1.
+    /* 단어 경계를 지키는 위치 찾기. 없으면 -1. */
     function find(text, term) {
       const t = text.toLowerCase();
       const needStart = ALNUM.test(term[0]);
