@@ -21,3 +21,7 @@ datacollector:
   title: "Data Collector — 인물·뉴스·지도 기록 앱"
   source: "개인 프로젝트 개발 로그 (Flutter 앱, 2026-01~03)"
   synced_through: 2026-03-03
+gah:
+  title: "GAH — 구글 인증 테스트 자동화 도구"
+  source: "업무 프로젝트 개발 로그 (비식별화 적용, 세션 GAH-wsl 경유)"
+  synced_through: 2026-10-05
