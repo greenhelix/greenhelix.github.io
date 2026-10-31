@@ -1,6 +1,6 @@
 ---
 title: "[GAH #6] 숫자가 안 맞는 버그들 — 데이터 정합성 집중 구간"
-date: 2026-07-20 10:00:00 +0900
+date: 2026-08-24 10:00:00 +0900
 categories: [Work Log, Android]
 tags: [debugging, data-integrity, xml-parsing]
 series: gah
@@ -9,6 +9,9 @@ description: 겉보기엔 비슷한 '파싱 버그'들이 사실은 전혀 다�
 ---
 
 {% include series-nav.html series="gah" %}
+
+> 이 글이 다루는 실제 작업 기간: **2026-08-24 (하루 집중)**
+{: .prompt-tip }
 
 ## 🇰🇷 문제
 실사용자들이 DB를 들여다보며 "이 컬럼은 항상 0이다", "이 값은 항상 비어 있다" 같은 이상을 여러 건 제보했습니다. 겉보기엔 다 비슷한 "파싱 버그"였지만 원인은 제각각이었습니다.

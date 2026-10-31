@@ -1,6 +1,6 @@
 ---
 title: "[GAH #5] DB 이전과 구조 정리 — 클라우드에서 로컬 PostgreSQL로"
-date: 2026-06-28 10:00:00 +0900
+date: 2026-05-26 10:00:00 +0900
 categories: [Work Log, Android]
 tags: [postgresql, postgrest, architecture, repository-pattern]
 series: gah
@@ -9,6 +9,9 @@ description: 클라우드 DB 용량 제한에 걸려 로컬 PostgreSQL로 전환
 ---
 
 {% include series-nav.html series="gah" %}
+
+> 이 글이 다루는 실제 작업 기간: **2026-05-26 ~ 2026-08-21**
+{: .prompt-tip }
 
 ## 🇰🇷 문제
 클라우드 DB 서비스의 용량 제한에 걸렸습니다. 전체 DB를 로컬 PostgreSQL + PostgREST로 이전해야 했습니다.

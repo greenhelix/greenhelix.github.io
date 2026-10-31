@@ -1,6 +1,6 @@
 ---
 title: "[GAH #3] 공유 생태계 전환 — 이슈 트래커에서 메신저 중심으로"
-date: 2026-05-12 10:00:00 +0900
+date: 2026-06-18 10:00:00 +0900
 categories: [Work Log, Android]
 tags: [integration, messenger-bot, kpi]
 series: gah
@@ -9,6 +9,9 @@ description: 테스트 결과 공유 채널이 조직 상황에 맞춰 바뀌면
 ---
 
 {% include series-nav.html series="gah" %}
+
+> 이 글이 다루는 실제 작업 기간: **2026-06-18 ~ 2026-06-30**
+{: .prompt-tip }
 
 ## 🇰🇷 문제
 테스트 결과를 어디에 공유할지는 조직 상황에 따라 계속 바뀌었습니다. 처음엔 이슈 트래커 A를 붙였고, 이어서 이슈 트래커 B를 붙였지만, 결국 팀이 실제로 매일 쓰는 메신저+협업 보드 중심으로 완전히 갈아탔습니다.

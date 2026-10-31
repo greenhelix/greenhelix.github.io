@@ -1,6 +1,6 @@
 ---
 title: "[GAH #8] 실사용 피드백 10건 — 사용자 중심 개선의 전형"
-date: 2026-09-10 10:00:00 +0900
+date: 2026-10-23 10:00:00 +0900
 categories: [Work Log, Android]
 tags: [ux, feedback, adb, scrcpy]
 series: gah
@@ -9,6 +9,9 @@ description: 한 사용자가 한 번에 제보한 불편사항 10개를 순서�
 ---
 
 {% include series-nav.html series="gah" %}
+
+> 이 글이 다루는 실제 작업 기간: **2026-10-23**
+{: .prompt-tip }
 
 ## 🇰🇷 배경
 실사용자 한 명이 스크린샷으로 불편사항 10개를 한 번에 제보했습니다. "천천히 순서대로 처리하자"는 원칙으로 하나씩 처리했습니다.

@@ -1,6 +1,6 @@
 ---
 title: "[GAH #7] 실시간 현황판 집중 개발"
-date: 2026-08-15 10:00:00 +0900
+date: 2026-08-26 10:00:00 +0900
 categories: [Work Log, Android]
 tags: [dashboard, realtime, incident, ux]
 series: gah
@@ -9,6 +9,9 @@ description: 진행 상황을 한눈에 보여주는 대시보드를 만들면�
 ---
 
 {% include series-nav.html series="gah" %}
+
+> 이 글이 다루는 실제 작업 기간: **2026-08-26 ~ 2026-10-07**
+{: .prompt-tip }
 
 ## 🇰🇷 무엇을 만들었나
 테스트가 지금 얼마나 진행됐는지를 한눈에 보여주는 대시보드를 계기판형 레이아웃으로 전면 개편했습니다. 샤드별 레인(어느 기기가 무엇을 하고 있는지), 완료 모듈 목록, 실시간 성능 비교(현재 속도 vs 과거 평균) 등을 붙였습니다.

@@ -1,6 +1,6 @@
 ---
 title: "[GAH #2] 결과를 DB에 쌓기 시작하다"
-date: 2026-04-05 10:00:00 +0900
+date: 2026-03-25 10:00:00 +0900
 categories: [Work Log, Android]
 tags: [database, automation, xml-parsing]
 series: gah
@@ -9,6 +9,9 @@ description: 일회성으로 보고 끝나던 테스트 결과를, 실패 패턴
 ---
 
 {% include series-nav.html series="gah" %}
+
+> 이 글이 다루는 실제 작업 기간: **2026-03-25 ~ 2026-04-24**
+{: .prompt-tip }
 
 ## 🇰🇷 문제
 테스트를 실행하는 것과, 그 결과를 추적 가능한 데이터로 남기는 것은 전혀 다른 문제였습니다. 처음엔 결과 XML을 그때그때 보고 끝났지만, 반복되는 실패 패턴을 추적하려면 구조화된 저장소가 필요했습니다.
