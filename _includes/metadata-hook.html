@@ -1,5 +1,11 @@
 {%- comment -%} 데스크톱(850px 이상) 전 구간에서 왼쪽 사이드바를 접고 펴는 둥근 버튼. 850px 미만은 테마 기본 햄버거를 쓴다. {%- endcomment -%}
 <style>
+  /* 프로필 이미지: 테마 기본 원형 자르기 때문에 그림 귀퉁이가 잘려서 네모(살짝 둥근)로 변경 */
+  #avatar.rounded-circle, #avatar.rounded-circle img {
+    border-radius: 14px !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
   #sidebar-collapse-btn { display: none; }
   @media (min-width: 850px) {
     #sidebar { transition: transform .25s ease; }
