@@ -25,3 +25,7 @@ gah:
   title: "GAH — 구글 인증 테스트 자동화 도구"
   source: "업무 프로젝트 개발 로그 (비식별화 적용, 세션 GAH-wsl 경유)"
   synced_through: 2026-10-27
+codetools:
+  title: "코드 구조 파악 도구 만들기"
+  source: "repo greenhelix/dev_logs (Windows/dependency, Windows/DiagramGenerator, Flutter/flutter_project/kani_diagram) — 비공개 전환 후 삭제 예정"
+  synced_through: 2026-02-19

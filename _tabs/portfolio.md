@@ -36,6 +36,13 @@ order: 5
 
 {% include series-timeline.html series="datacollector" %}
 
+## 🧩 코드 구조 파악 도구 만들기
+
+방대한 코드를 혼자 읽어야 하는 문제를 줄이려고 만든 작은 도구 3가지 — Maven→Android.bp 변환기, PlantUML 다이어그램 생성기, 핵심 파일 점수화 웹 도구(Kani Diagram).
+*Three small tools I built to make reading a large codebase alone less painful.*
+
+{% include series-nav.html series="codetools" %}
+
 ## 📚 알고리즘 스터디
 
 2020년부터 쌓은 풀이를 주제별(힙·정렬·DFS/BFS·다익스트라·백트래킹·DP·그리디·C 자료구조)로 다시 정리했습니다.
