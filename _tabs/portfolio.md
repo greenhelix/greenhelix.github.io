@@ -18,10 +18,10 @@ order: 5
 
 - 릴리즈(앱 배포): [PortableLiDARMapper-Release](https://github.com/greenhelix/PortableLiDARMapper-Release)
 
-## 🍐 Pear — 배 농장 배송관리 앱 (킥오프)
+## 🍐 Pear — 배 농장 배송관리 앱 (사이드로드 배포 중)
 
-주문 접수·배송 현황·통계를 돕는 모바일/웹 앱. 카메라 OCR로 제각각의 주문서를 자동 입력합니다 (Flutter · FastAPI · PostgreSQL · Cloudflare Tunnel).
-*A mobile/web app for a pear farm's order and delivery workflow, with camera-based OCR order entry — in planning.*
+주문 접수·배송 현황·통계를 돕는 모바일/웹 앱. 사진 AI입력으로 제각각의 주문서를 자동 입력합니다 (Flutter · FastAPI · PostgreSQL · Cloudflare Tunnel). 현재 v0.1.14, 플레이스토어 정식 출시를 준비 중입니다.
+*A mobile/web app for a pear farm's order and delivery workflow, with camera-based AI order entry — sideloaded pre-release, heading toward a Play Store launch.*
 
 {% include project-progress.html project="pear" %}
 
