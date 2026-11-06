@@ -6,6 +6,7 @@ tags: [flutter, riverpod, drift, firestore, repository-pattern]
 series: datacollector
 series_order: 2
 description: 두 핵심 기능을 로컬 DB로 먼저 만든 뒤, Repository만 갈아 끼워 클라우드로 전환한 과정
+mermaid: true
 ---
 
 {% include series-nav.html series="datacollector" %}

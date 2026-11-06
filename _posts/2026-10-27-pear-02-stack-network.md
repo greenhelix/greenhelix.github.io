@@ -6,6 +6,7 @@ tags: [flutter, fastapi, cloudflare-tunnel, tailscale, architecture]
 series: pear
 series_order: 2
 description: Flutter + FastAPI + PostgreSQL 선택 근거와, Tailscale 대신 Cloudflare Tunnel로 방향을 바꾼 과정
+mermaid: true
 ---
 
 {% include series-nav.html series="pear" %}

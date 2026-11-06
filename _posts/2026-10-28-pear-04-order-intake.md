@@ -6,6 +6,7 @@ tags: [flutter, gemini, ocr, validation, kakao-api]
 series: pear
 series_order: 4
 description: 제각각의 형태로 들어오는 주문을 세 가지 경로로 받되, 검증만은 한 화면에서 통일한 과정
+mermaid: true
 ---
 
 {% include series-nav.html series="pear" %}

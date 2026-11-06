@@ -6,6 +6,7 @@ tags: [flutter, fastapi, postgresql, dashboard]
 series: pear
 series_order: 5
 description: 날짜별 일괄 처리가 필요한 배송현황 화면과, 미리 집계해 두지 않고 그때그때 계산하는 통계 대시보드
+mermaid: true
 ---
 
 {% include series-nav.html series="pear" %}

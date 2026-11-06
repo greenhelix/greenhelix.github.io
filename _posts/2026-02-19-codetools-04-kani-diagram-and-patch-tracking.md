@@ -6,6 +6,7 @@ tags: [flutter, flutter-web, firebase, riverpod, architecture]
 series: codetools
 series_order: 4
 description: 핵심 파일을 자동으로 점수화하는 웹 다이어그램 도구, 그리고 아직 구현하지 못한 벤더·고객사·구글 패치 추적 아이디어
+mermaid: true
 ---
 
 {% include series-nav.html series="codetools" %}

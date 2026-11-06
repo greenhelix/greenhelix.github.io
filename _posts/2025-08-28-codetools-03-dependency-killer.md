@@ -6,6 +6,7 @@ tags: [python, maven, aosp, android-bp, automation]
 series: codetools
 series_order: 3
 description: AOSP에 외부 라이브러리를 넣을 때마다 반복하던 전이 의존성 추적을, 명령어 한 줄로 끝내는 스크립트
+mermaid: true
 ---
 
 {% include series-nav.html series="codetools" %}

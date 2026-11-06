@@ -6,6 +6,7 @@ tags: [cloudflare-tunnel, networking, infra]
 series: pear
 series_order: 9
 description: 재시작할 때마다 바뀌던 임시 주소를, 도메인을 사서 고정 주소로 바꾼 과정과 그 사이의 판단들
+mermaid: true
 ---
 
 {% include series-nav.html series="pear" %}

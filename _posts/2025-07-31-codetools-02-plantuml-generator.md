@@ -6,6 +6,7 @@ tags: [python, plantuml, pyinstaller, java, kotlin]
 series: codetools
 series_order: 2
 description: Java 코드를 읽어 PlantUML 클래스 다이어그램을 뽑아주는 작은 GUI 도구와, exe로 배포하며 겪은 시행착오
+mermaid: true
 ---
 
 {% include series-nav.html series="codetools" %}
