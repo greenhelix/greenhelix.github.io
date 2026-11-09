@@ -20,8 +20,10 @@ mermaid: true
 | 경로 | 방식 |
 |---|---|
 | 직접입력 | 폼에 바로 타이핑 |
-| 사진 AI입력 | 사진을 찍으면 Gemini 멀티모달로 손글씨·문자·엑셀 캡처를 인식해 자동 채움 |
+| 사진 AI입력 | 사진을 찍으면 Gemini 멀티모달 LLM이 사진을 통째로 보고 주문 데이터를 구조화해 추출, 자동 채움 |
 | 엑셀 파일 가져오기 | 택배사 지정 양식 엑셀을 그대로 불러오기 |
+
+전통적인 OCR(글자 인식) 계열과 멀티모달 LLM을 미리 비교해봤는데, 주문서가 손글씨인 경우가 많고 양식도 제각각이라 **글자만 읽어내는 방식보다 사진 전체의 맥락을 보고 구조화하는 멀티모달 AI 쪽이 정확도에서 유리**하다고 판단해 처음부터 이 방식으로 정했습니다. (인터넷이 안 되는 상황을 대비한 전통 OCR 폴백은 설계에만 남겨두고 아직 구현하지 않았습니다.)
 
 ```mermaid
 flowchart LR
@@ -38,10 +40,10 @@ flowchart LR
 - **상세주소 패턴 검증**: 동/호 표기의 오타, 숫자에 문자가 섞인 경우, 상식 밖의 호수(예: 존재할 수 없는 층수) 같은 패턴을 걸러냄
 - **전화번호 형식 검증**
 
-세 가지를 **입력이 끝나는 단일 화면**에서 한 번에 처리합니다. OCR이나 엑셀 가져오기에서 생긴 오류든, 사람이 직접 입력하다 낸 오타든 같은 기준으로 걸러진다는 뜻입니다.
+세 가지를 **입력이 끝나는 단일 화면**에서 한 번에 처리합니다. 사진 AI입력이나 엑셀 가져오기에서 생긴 오류든, 사람이 직접 입력하다 낸 오타든 같은 기준으로 걸러진다는 뜻입니다.
 
 ## 배운 점
 "입력 경로를 통일한다"는 목표를 세우면 오히려 현장 상황(현실에서는 손글씨도, 엑셀도, 직접 입력도 다 생긴다)과 부딪힙니다. **입구는 여러 개로 열어 두고 출구(검증)를 하나로 모으는** 쪽이 현실적이면서도 일관성을 지키는 방법이었습니다.
 
 ## 🇺🇸 Summary
-Orders arrive in three different shapes in practice, so instead of forcing one input method I kept three entry paths (manual typing, photo-based AI recognition via Gemini for handwriting/texts/spreadsheet screenshots, and direct import of the courier's Excel template) that all funnel into one shared validation screen — address existence via a map API, detail-address pattern checks, and phone format checks — so every order is held to the same standard regardless of how it arrived.
+Orders arrive in three different shapes in practice, so instead of forcing one input method I kept three entry paths (manual typing, photo-based input where a Gemini multimodal LLM reads the whole photo and extracts structured order data directly — not traditional OCR, chosen from the start over OCR/ML-Kit-style text recognition because handwritten and inconsistently-formatted orders favored a model that understands context over one that just reads characters, with a traditional-OCR fallback for offline cases designed but not yet built, and direct import of the courier's Excel template) that all funnel into one shared validation screen — address existence via a map API, detail-address pattern checks, and phone format checks — so every order is held to the same standard regardless of how it arrived.
