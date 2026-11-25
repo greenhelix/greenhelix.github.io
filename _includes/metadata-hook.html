@@ -13,7 +13,8 @@
   .home-widgets .widget-title { font-size: 1rem; font-weight: 700; margin: 0 0 .6rem 0; }
   .home-widgets .widget-sub { font-size: .85rem; opacity: .75; margin-bottom: .4rem; }
   .home-widgets .widget-link { display: inline-block; margin-top: .5rem; font-size: .85rem; }
-  .home-widgets .widget-img-full { width: 100%; max-width: 100%; height: auto; border-radius: 6px; }
+  .home-widgets .widget-github { overflow-x: auto; }
+  .home-widgets .widget-img-full { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 6px; }
   .home-widgets .widget-recent-list { list-style: none; margin: 0; padding: 0; font-size: .9rem; }
   .home-widgets .widget-recent-list li {
     padding: .3rem 0; border-bottom: 1px dashed var(--btn-border-color, rgba(128,128,128,.25));
@@ -31,6 +32,7 @@
   @media (max-width: 767.98px) {
     .home-widgets { grid-template-columns: 1fr; }
   }
+  #post-list { scroll-margin-top: 4.5rem; }
   /* 프로필 이미지: 테마 기본 원형 자르기 때문에 그림 귀퉁이가 잘려서 네모(살짝 둥근)로 변경 */
   #avatar.rounded-circle, #avatar.rounded-circle img {
     border-radius: 14px !important;
@@ -92,6 +94,19 @@
       var upd = document.querySelector('#notification button[aria-label="Update"]');
       if (body) body.textContent = '새 내용이 있어요';
       if (upd) upd.textContent = '새로고침';
+
+      /* 홈 화면 페이지네이션: 다음/이전 페이지로 가도 글 목록(#post-list) 위치에서 바로 보이게, 맨 위 대시보드로 안 돌아가게 */
+      var pager = document.querySelector('nav[aria-label="Page Navigation"]');
+      if (pager) {
+        pager.addEventListener('click', function (e) {
+          var link = e.target.closest('a.page-link');
+          if (!link) return;
+          var href = link.getAttribute('href');
+          if (!href || href === '#') return;
+          e.preventDefault();
+          window.location.href = href + '#post-list';
+        });
+      }
     });
   })();
 </script>
