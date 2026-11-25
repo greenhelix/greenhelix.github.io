@@ -1,5 +1,36 @@
 {%- comment -%} 데스크톱(850px 이상) 전 구간에서 왼쪽 사이드바를 접고 펴는 둥근 버튼. 850px 미만은 테마 기본 햄버거를 쓴다. {%- endcomment -%}
 <style>
+  /* 홈 대시보드: 지금 만들고 있는 것 / GitHub 활동 / 최근 글 / 연락처. 768px 미만에서는 1열로 쌓임 */
+  .home-widgets {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+    margin: 0 0 1.5rem 0;
+  }
+  .home-widgets .widget {
+    border: 1px solid var(--btn-border-color, rgba(128,128,128,.4));
+    background: var(--card-bg, var(--main-bg));
+    border-radius: 10px; padding: 14px 16px;
+  }
+  .home-widgets .widget-title { font-size: 1rem; font-weight: 700; margin: 0 0 .6rem 0; }
+  .home-widgets .widget-sub { font-size: .85rem; opacity: .75; margin-bottom: .4rem; }
+  .home-widgets .widget-link { display: inline-block; margin-top: .5rem; font-size: .85rem; }
+  .home-widgets .widget-img-full { width: 100%; max-width: 100%; height: auto; border-radius: 6px; }
+  .home-widgets .widget-recent-list { list-style: none; margin: 0; padding: 0; font-size: .9rem; }
+  .home-widgets .widget-recent-list li {
+    padding: .3rem 0; border-bottom: 1px dashed var(--btn-border-color, rgba(128,128,128,.25));
+    display: flex; justify-content: space-between; gap: .5rem;
+  }
+  .home-widgets .widget-recent-list li:last-child { border-bottom: none; }
+  .home-widgets .widget-recent-list a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .home-widgets .widget-recent-date { opacity: .6; font-size: .8rem; white-space: nowrap; }
+  .home-widgets .widget-contact { display: flex; flex-direction: column; gap: .5rem; justify-content: center; }
+  .home-widgets .widget-contact-btn {
+    display: inline-flex; align-items: center; gap: .5rem;
+    border: 1px solid var(--btn-border-color, rgba(128,128,128,.4));
+    border-radius: 999px; padding: .4rem .9rem; font-size: .9rem; width: fit-content;
+  }
+  @media (max-width: 767.98px) {
+    .home-widgets { grid-template-columns: 1fr; }
+  }
   /* 프로필 이미지: 테마 기본 원형 자르기 때문에 그림 귀퉁이가 잘려서 네모(살짝 둥근)로 변경 */
   #avatar.rounded-circle, #avatar.rounded-circle img {
     border-radius: 14px !important;
