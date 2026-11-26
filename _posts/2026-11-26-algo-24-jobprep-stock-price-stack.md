@@ -8,6 +8,7 @@ series_order: 24
 group: jobprep
 group_order: 6
 description: 프로그래머스 주식가격 풀이, 감소하는 스택(monotonic stack)으로 가격 하락 시점을 O(n)에 찾는 방법, enumerate 동작 원리, while과 append의 타이밍 분리
+mermaid: true
 ---
 
 {% include series-nav.html series="algorithm" %}
