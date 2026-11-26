@@ -2,7 +2,7 @@
 <style>
   /* 홈 대시보드: 지금 만들고 있는 것 / GitHub 활동 / 최근 글 / 연락처. 768px 미만에서는 1열로 쌓임 */
   .home-widgets {
-    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; align-items: start;
     margin: 0 0 1.5rem 0;
   }
   .home-widgets .widget {
@@ -23,7 +23,7 @@
   .home-widgets .widget-recent-list li:last-child { border-bottom: none; }
   .home-widgets .widget-recent-list a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .home-widgets .widget-recent-date { opacity: .6; font-size: .8rem; white-space: nowrap; }
-  .home-widgets .widget-contact { display: flex; flex-direction: column; gap: .5rem; justify-content: center; }
+  .home-widgets .widget-contact { display: flex; flex-direction: column; gap: .5rem; }
   .home-widgets .widget-contact-btn {
     display: inline-flex; align-items: center; gap: .5rem;
     border: 1px solid var(--btn-border-color, rgba(128,128,128,.4));
