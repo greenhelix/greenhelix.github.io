@@ -6,6 +6,7 @@
     margin: 0 0 1.5rem 0;
   }
   .home-widgets .widget {
+    min-width: 0;
     border: 1px solid var(--btn-border-color, rgba(128,128,128,.4));
     background: var(--card-bg, var(--main-bg));
     border-radius: 10px; padding: 14px 16px;
@@ -21,7 +22,9 @@
     display: flex; justify-content: space-between; gap: .5rem;
   }
   .home-widgets .widget-recent-list li:last-child { border-bottom: none; }
-  .home-widgets .widget-recent-list a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .home-widgets .widget-recent-list a {
+    min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
   .home-widgets .widget-recent-date { opacity: .6; font-size: .8rem; white-space: nowrap; }
   .home-widgets .widget-contact { display: flex; flex-direction: column; gap: .5rem; }
   .home-widgets .widget-contact-btn {
